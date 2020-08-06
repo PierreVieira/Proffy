@@ -1,5 +1,4 @@
 :root {
-    /*Variáveis CSS*/
     --color-background: #F0F0F7;
     --color-primary-lighter: #9871F5;
     --color-primary-light: #916BEA;
@@ -19,9 +18,7 @@
     --color-box-base: #FFFFFF;
     --color-box-footer: #FAFAFC;
     --color-small-info: #C1BCCC;
-
-    /* Tamanho da fonte padrão: 16px - 100% - 1rem */
-    font-size: 60%;
+    font-size: 60%; /* controle das medidas rem */
 }
 
 * {
@@ -30,7 +27,11 @@
     box-sizing: border-box;
 }
 
-body{
+html, body {
+    height: 100vh;
+}
+
+body {
     background: var(--color-background);
     display: flex;
     align-items: center;
